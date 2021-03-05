@@ -1,0 +1,19 @@
+{% macro show(title, subTitle, Feature1, Feature2, Feature3) %}
+    <div class='card-pricing'>
+        <div class='card__img2'>
+            <img src='https://www.fillmurray.com/300/360' />
+        </div>
+        <div class='card__desc'>
+            <h2 class='desc__title'>{{ title }}</h2>
+            <h3 class='desc__title2'>{{ subTitle }}</h3>
+            <ul class='list__feature'>
+                <li>{{ Feature1 }}</li>
+                <li>{{ Feature2 }}</li>
+                <li>{{ Feature3 }}</li>
+            </ul>
+            {%import "components/button.njk" as buttonPricing%}
+            {{ button.show('Start Now')}}
+        </div>
+    </div>
+
+{% endmacro %}
