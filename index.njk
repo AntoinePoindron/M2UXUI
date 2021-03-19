@@ -1,19 +1,51 @@
 ---
 layout: layouts/base.njk
 ---
+<div class='splash'>
+    <h1 class='collections-title'>te</h1>
+    <h2 class='soustitre'>Je suis UI designer</h2>
+
+    {{ button.show("Let's go") }}
+</div>
 
 <div class='collections'>
-  <h1 class='collections-title'>Collections</h1>
+
   {%import "components/button.njk" as button%}
   {%import "components/card-blog.njk" as cardBlog%}
+  {%import "components/card-blog2.njk" as cardBlog2%}
   {%import "components/card-pricing.njk" as cardPricing%}
 
-  {{ button.show('plop')}}
-  {{ button.show('see more')}}
+  <!-- UI APP DESIGN -->
 
-
+  <h2 class='titrecategorie'>UI App Design</h2>
   <div class='flex'>
-    {{ cardBlog.show('titre', 'See more') }}
-    {{ cardPricing.show('titre', 'See more', 'Test', 'Test', 'Test') }}
+    {{ cardBlog.show('img/hoppStore.png','hoppStore', "Réalisation du design de l'application hoppStore, service de livraison entre particuliers en point relais") }}
+    {{ cardBlog.show('img/Poka.png','Poka', "Poka est une application permettant de contrôler à distance votre machine à café") }}
+    {{ cardBlog.show('img/TDB.png','Théâtre Dijon Bourgogne', "Cette application vous permettra de réserver vos billets en ligne et d'obtenir des informations sur vos spectacles",) }}
   </div>
+
+  <!-- UI WEB DESIGN -->
+
+  <h2 class='titrecategorie'>UI Web Design</h2>
+  <div class='flex'>
+    {{ cardBlog.show('img/Lyrios.png','Lyrios', "Réalisation du design de l'application hoppStore, service de livraison entre particuliers en point relais") }}
+    {{ cardBlog.show('img/Jazz.png','Jazz 5 Continents', "Poka est une application permettant de contrôler à distance votre machine à café") }}
+    {{ cardBlog.show('img/Theatre.png','Actoral', "Cette application vous permettra de réserver vos billets en ligne et d'obtenir des informations sur vos spectacles",) }}
+  </div>
+
+<!-- MOTION DESIGN -->
+
+  <h2 class='titrecategorie'>Motion design</h2>
+  <div class='flex'>
+    {{ cardBlog.show('img/Akro.png','Akro', "Storytelling d'une application de rencontre") }}
+    {{ cardBlog.show('img/TDB.png','MyWonderchat', "résentation d'un logiciel de communication entre usines") }}
+    {{ cardBlog.show('img/Akro.png','XCar', "XCar vous permettra de faire des enchères sur des véhicules d'occasion") }}
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class='footer'>
+    <h1 class='collections-title'>Merci</h1>
 </div>

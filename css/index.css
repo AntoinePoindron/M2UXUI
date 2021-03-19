@@ -1,19 +1,54 @@
 a {color: inherit;}
 
 .collections {
-  background-color: #F4F4F4;
-  padding: 50px 30px; 
+  background-color: rgb(243, 243, 243);
+  padding: 50px 30px;
+  padding-left:200px;
+  padding-right:200px;
+  
 }
 
 .collections-title {
-  margin-bottom: 40px;
-  font-size: 28px;
+  font-size: 54px;
+  text-align:center;
+  font-family: Michroma;
+  color:white;
 }
+
 .collections .flex {
   display: flex;
   padding: 40px 0;
   justify-content: space-between;
 }
 .collections .flex .card-blog {
-  width: 20%;
+  width: 30%;
+}
+
+.soustitre{
+  text-align:center;
+  font-family: Michroma;
+  font-size:18px;
+  margin-bottom: 100px;
+  margin-top:10px;
+  color:rgb(190, 190, 190);
+}
+
+.splash{
+  height:800px;
+  display: flex;
+  justify-content: center;
+  flex-direction : column;
+  align-items: center;
+  background-image: url("https://zupimages.net/up/21/11/49wz.png");
+
+}
+
+.footer{
+  height:800px;
+  display: flex;
+  justify-content: center;
+  flex-direction : column;
+  align-items: center;
+  background-image: url("https://zupimages.net/up/21/11/49wz.png");
+
 }
