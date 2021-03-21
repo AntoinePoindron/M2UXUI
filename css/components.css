@@ -1,47 +1,56 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 /* SITE HEADER */
 .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.site-header .nav {
-    display: flex;
-    align-items: center;
-}
-
-.site-header .nav li:not(:last-child) {
-    margin-right: 32px;       
-}
-
-.site-header .nav a {
-    text-decoration: none;
-    white-space: nowrap;
-}
-
-.site-header .nav .button {
-    min-width: 0;
-    padding: 8px 30px;
-}
-
-/* BOUTON */
-.button {
-    
-    border-radius: 5px;
-    border:2px solid #fff;
-    padding: 20px 0;
-    margin-top:60px;
-    font-size:12px;
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    min-width: 200px;
-    text-align: center;
-    opacity: 0.6;
-    transition: 0.3s;
-}
-
-.button:hover{
-    opacity:1;
+    display: none;
 }
 
 /* CARD BLOG */
@@ -65,6 +74,7 @@
 .card-blog .desc__title {
     font-size: 16px;
     margin-bottom: 15px;
+    font-family: Michroma;
 }
 
 .card-blog .description{
@@ -86,8 +96,70 @@
 
 .card-blog .cta{
     color:red;
+    font-family: Futura PT;
 }
 
 .card-blog .cta:hover{
     text-decoration: underline;
 }
+
+
+.collections {
+  background-color: rgb(243, 243, 243);
+  padding: 50px 30px;
+  padding-left:200px;
+  padding-right:200px;
+  
+}
+
+.collections-title {
+  font-size: 54px;
+  text-align:center;
+  font-family: Michroma;
+  color:white;
+}
+
+.collections .flex {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-between;
+}
+.collections .flex .card-blog {
+  width: 30%;
+}
+
+.soustitre{
+  text-align:center;
+  font-family: Michroma;
+  font-size:18px;
+  margin-bottom: 100px;
+  margin-top:10px;
+  color:grey;
+}
+.titrecategorie{
+    font-family: Michroma;
+    text-align:center;
+    padding-top:100px;
+    padding-bottom:50px;
+    color:grey;
+}
+.splash{
+  height:800px;
+  display: flex;
+  justify-content: center;
+  flex-direction : column;
+  align-items: center;
+  background-image: url("https://zupimages.net/up/21/11/49wz.png");
+
+}
+
+.footer{
+  height:800px;
+  display: flex;
+  justify-content: center;
+  flex-direction : column;
+  align-items: center;
+  background-image: url("https://zupimages.net/up/21/11/4otu.png");
+
+}
+
